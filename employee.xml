@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <name>Umang</name>
+    <phone>789456123</phone>
+    <email>umang@gmail.com</email>
+  </row>
+  <row>
+    <name>Gaurang</name>
+    <phone>123654789</phone>
+    <email>gaurang@gmail.com</email>
+  </row>
+  <row>
+    <name>Zaid</name>
+    <phone>852136479</phone>
+    <email>zaid@gmail.com</email>
+  </row>
+  <row>
+    <name>Heeba </name>
+    <phone>15975364280</phone>
+    <email>heeba@gmail.com</email>
+  </row>
+  <row>
+    <name>Dhwani</name>
+    <phone>164379826</phone>
+    <email>dhwani@gmail.com</email>
+  </row>
+  <row>
+    <name>Rahul</name>
+    <phone>8794651320</phone>
+    <email>rahul@gmail.com</email>
+  </row>
+</root>

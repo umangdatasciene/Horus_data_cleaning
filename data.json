@@ -1,0 +1,24 @@
+{ "emp_details": 
+        [{
+	"Name": "Umang",
+ 	 "Place": "Kandivali",
+    "Phone":98674567894
+	 
+	 },{
+   "Name": "Gaurang",
+ 	 "Place": "Virar",
+    "Phone":78564728677
+   },
+   {
+   "Name": "Zaid",
+ 	 "Place": "Mumbai Central",
+    "Phone":78456738578
+   },
+   {
+   "Name": "Rahul",
+ 	 "Place": "Andheri",
+    "Phone":87345637891
+   }
+	 
+	 ]
+ }
