@@ -1,0 +1,35 @@
+name: SonarQube Analysis
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install SonarScanner
+        run: |
+          sudo apt update
+          sudo apt install -y unzip wget
+          wget -O sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
+          unzip sonar-scanner.zip
+          mv sonar-scanner-*/ sonar-scanner
+
+      - name: Run SonarQube Scan
+        env:
+          SONAR_HOST_URL: "https://sonarqube.tssconsultancy.com/"
+        run: |
+          ./sonar-scanner/bin/sonar-scanner \
+            -Dsonar.projectKey=myproject \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=$SONAR_HOST_URL \
+            -Dsonar.login=sqa_ffe33e86e339760f598c1b3ac97ac8fc1448258f  # Hardcoded token (change later!)
